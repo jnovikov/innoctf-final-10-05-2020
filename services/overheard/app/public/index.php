@@ -163,7 +163,6 @@ $app->patch('/api/posts/{post}', function (Request $request, Response $response,
         return jsonError($response, "Not found", 404);
     }
 
-    assert($post[1] == $_SESSION['user'], "Вы не можете редактировать запись ${post[1]}");
     assert($post[3] == true, "Вы не можете редактировать опубликованную запись");
 
     $body = $request->getParsedBody();

@@ -36,6 +36,7 @@ before_script:
 
 script:
   - ./check.sh "$SERVICE"
+  - ./check_sploit.py 
 
 after_script:
   - ./stop.sh

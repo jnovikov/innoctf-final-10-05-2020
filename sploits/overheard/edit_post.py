@@ -11,11 +11,12 @@ password = login
 s = Session()
 resp = s.post(url + '/api/register', data = {'login':login, 'password': password})
 
+
 latest_posts = s.get(url + '/api/posts/latest?paginate[limit]=20').json()['posts']
 
 
 for p in latest_posts:
     r = s.patch(url + '/api/posts/' + str(p[0]))
-    print(r.json(), flush=True)
+    print(r.text, flush=True)
 
 

@@ -12,6 +12,7 @@ matches = regexp.findall(out.decode())
 
 if len(matches) > 0:
     print("Exploit is working!!!", flush=True)
+    print(matches, flush=True)
     sys.exit(1)
 else:
     print("OK")

@@ -1,5 +1,7 @@
 # InnoCTF School 2020 Final
 
+[![Build Status](https://travis-ci.com/jnovikov/innoctf-final-10-05-2020.svg?branch=master)](https://travis-ci.com/jnovikov/innoctf-final-10-05-2020)
+
 A school A&D competition held on May 10, 2020.
 
 Repository contains source code of services, checkers and sploits.
